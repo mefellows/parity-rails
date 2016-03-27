@@ -1,0 +1,9 @@
+Dockerfile
+Dockerfile.ci
+Dockerfile.dist
+docker-compose.yml
+docker-compose.yml.dev
+parity.yml
+.parity/docker-entrypoint-initdb.d/README.md
+.parity/docker-entrypoint-initdb.d/roles.sh
+.parity/start-dev.sh
