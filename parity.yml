@@ -12,7 +12,7 @@ loglevel: 2
 run:
   - name: compose
     config:
-      composefile: .parity/docker-compose.yml.dev
+      composefile: docker-compose.yml.dev
 
 # Configures the synchronisation Plugin, using Mirror () by default
 sync:
@@ -35,7 +35,7 @@ registry:
       host: parity.local:5000
 
 # Configures how images are built
-builder:
+build:
   - name: compose
     config:
-      - image_name: parity-test
+      image_name: parity-test
