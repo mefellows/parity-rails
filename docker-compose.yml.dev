@@ -16,7 +16,7 @@ postgres:
 web:
   # image: {{.Ci}}:{{.Version}}
   build: .
-  dockerfile: dockerfile.ci
+  dockerfile: Dockerfile.ci
   command: .parity/start-dev.sh
   restart: always
   volumes:

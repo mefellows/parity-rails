@@ -13,7 +13,7 @@ postgres:
 
 web:
   build: .
-  dockerfile: dockerfile.dist
+  dockerfile: Dockerfile.dist
   command: bundle exec rails s -p 80 -b '0.0.0.0'
   restart: always
   volumes:
