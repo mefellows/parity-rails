@@ -36,6 +36,6 @@ registry:
 
 # Configures how images are built
 build:
-  - name: compose
+  - name: compose-builder
     config:
       image_name: parity-test
