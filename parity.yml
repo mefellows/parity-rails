@@ -1,5 +1,5 @@
 # Project Name
-name: somefile
+name: {{.Base}}
 
 # Log Level (0 = Trace, 1 = Debug, 2 = Info, 3 = Warn, 4 = Error, 5 = Fatal)
 loglevel: 2
@@ -12,6 +12,7 @@ loglevel: 2
 run:
   - name: compose
     config:
+      image_name: {{.Base}}
       composefile: docker-compose.yml.dev
 
 # Configures the synchronisation Plugin, using Mirror () by default
@@ -33,9 +34,3 @@ registry:
   - name: default
     config:
       host: parity.local:5000
-
-# Configures how images are built
-build:
-  - name: compose-builder
-    config:
-      image_name: parity-test
